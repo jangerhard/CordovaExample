@@ -1,7 +1,7 @@
 $(document).on('pageinit', '#home', function(){
   var url = 'https://api.themoviedb.org/3/',
      mode = 'search/movie?',
-     movieName = '&query=Batman',
+     movieName = '&query=Superman',
      key = 'api_key=15e0b039102ad3deb32fd12cbe96d0f1'
      language = '&language=en-US';
 
@@ -26,7 +26,7 @@ $(document).on('pagebeforeshow', '#headline', function(){
             $('#movie-data').append('<li>Title: '+row.original_title+'</li>');
             $('#movie-data').append('<li>Release date: '+row.release_date+'</li>');
             $('#movie-data').append('<li>Popularity: '+row.popularity+'</li>');
-            $('#movie-data').append('<li>Average Vote: '+row.vote_average+'</li>');
+            $('#movie-data').append('<li>Average : '+row.vote_average+'</li>');
             $('#movie-data').listview('refresh');
         }
     });
